@@ -26,7 +26,7 @@ def partb():
         X[i] = newton(U[i])
 
     end = time.time()
-    print(f"Runtime: {end - start:.2f} seconds")
+    print(f"Inverse Sampling Runtime: {end - start:.2f} seconds")
     plt.hist(X, bins=100, density=True)
     x_vals = np.linspace(0, X.max(), 500)
     pdf_vals = x_vals * np.exp(-x_vals)
@@ -35,6 +35,7 @@ def partb():
     plt.xlabel("x")
     plt.ylabel("Density")
     plt.title("Inverse Sampling")
+    plt.savefig("p2.png")
     plt.show()
 
 
@@ -55,7 +56,7 @@ def partc():
 
     end = time.time()
 
-    print(f"Runtime: {end - start:.2f} seconds")
+    print(f"Acceptance Rejectance Runtime: {end - start:.2f} seconds")
 
 def partd():
     N = 10**6
@@ -65,5 +66,7 @@ def partd():
     E2 = np.random.exponential(scale=1.0, size=N)
     X = E1 + E2
     end = time.time()
-    print(f"Runtime: {end - start:.4f} seconds")
+    print(f"Gamma Sampling Runtime: {end - start:.4f} seconds")
 partb()
+partc()
+partd()

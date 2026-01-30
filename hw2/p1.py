@@ -23,4 +23,5 @@ for N in Ns:
     plt.xlabel("x")
     plt.ylabel("Density")
     plt.title(f"Power-law samples (N = {N})")
+    plt.savefig(f'p1.{N}.png')
     plt.show()
