@@ -7,7 +7,7 @@ def parte():
         [0.4, 0.0, 0.6]     
     ])
 
-    p_50 = np.linalg.matrix_power(p, 50)
+    p_50 = np.linalg.matrix_power(p, 50).round(3)
     print("p^50")
     print(p_50)
 
@@ -37,4 +37,5 @@ def partf():
         lst.append(state)
         state = oneRound(state)
     print(lst.count('G')/len(lst))
+    return lst.count('G')/len(lst)
 partf()
