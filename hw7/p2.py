@@ -26,7 +26,8 @@ plt.eventplot([Atimes, Btimes],
 plt.yticks([0,1], ['Team B', 'Team A'])
 plt.xlim(0, 48)
 plt.xlabel("Time (minutes)")
-plt.title("Basketball Game Simulation (λ = 3 per minute)")
+plt.title("Basketball Game Simulation ")
+plt.savefig("2partc.png")
 plt.show()
 
 
@@ -56,7 +57,9 @@ plt.eventplot([Atimes, Btimes],
 plt.yticks([0,1], ['Team B', 'Team A'])
 plt.xlim(0, 48)
 plt.xlabel("Time (minutes)")
-plt.title("Basketball Game Simulation (λ = 3 per minute)")
+plt.title("Basketball Game Simulation ")
+plt.savefig("2partd.png")
+
 plt.show()
 
 

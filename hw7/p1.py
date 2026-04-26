@@ -35,6 +35,7 @@ for t in tvals:
     pTieVals.append(pTie)
 
 plt.plot(tvals,pTieVals)
+plt.savefig("1partb.png")
 plt.show()
 
 
@@ -52,6 +53,8 @@ for t in tvals:
     pTieVals2.append(pTie)
 
 plt.plot(tvals, pTieVals2)
+plt.savefig("1partc.png")
+
 plt.show()
 
 
